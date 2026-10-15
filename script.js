@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
 // falls back to Instagram.
 const emailLink = document.getElementById("email");
 if (emailLink) {
-  const address = ["danar", "4213"].join("") + String.fromCharCode(64) + ["gmail", "com"].join(".");
+  const address = ["danarqusyairi", "03"].join("") + String.fromCharCode(64) + ["gmail", "com"].join(".");
   emailLink.href = "mailto:" + address;
   emailLink.removeAttribute("target");
   emailLink.removeAttribute("rel");
