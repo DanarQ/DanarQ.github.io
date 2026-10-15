@@ -25,3 +25,15 @@ window.addEventListener("scroll", () => {
     links.forEach((a) => a.classList.toggle("active", a.hash === "#contact"));
   }
 }, { passive: true });
+
+// Build the email address at runtime so it never appears as plain text in the
+// page source (keeps simple spam bots from harvesting it). Without JS the link
+// falls back to Instagram.
+const emailLink = document.getElementById("email");
+if (emailLink) {
+  const address = ["danar", "4213"].join("") + String.fromCharCode(64) + ["gmail", "com"].join(".");
+  emailLink.href = "mailto:" + address;
+  emailLink.removeAttribute("target");
+  emailLink.removeAttribute("rel");
+  emailLink.textContent = address;
+}
