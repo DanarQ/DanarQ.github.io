@@ -141,6 +141,12 @@ h2 { font-size: 1.9rem; font-weight: 700; letter-spacing: -0.03em; margin-bottom
 }
 .mail:hover { opacity: .75; }
 
+.socials { margin-top: 28px; color: var(--muted); font-size: 1rem; }
+.socials a { color: var(--ink); font-weight: 600; text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+.socials a:hover { color: var(--accent); }
+.foot a { text-decoration: none; }
+.foot a:hover { color: var(--accent); }
+
 .foot {
   display: flex; margin-bottom: 70px; justify-content: space-between;
   margin-top: 40px; padding-block: 28px 44px; border-top: 1px solid var(--line);
